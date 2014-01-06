@@ -9,6 +9,6 @@
 function getThroughTor(uri, callBack){
 	$.post( "http://localhost:8000/", { uri: uri })
 	.done(function( data ) {
-		if (typeof callBack == 'funcion') callBack(data);
+		if (typeof callBack == 'function') callBack(data);
 	});
 }

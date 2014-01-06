@@ -61,6 +61,7 @@
 	
 	if (!headers_sent()) {
 		header('X-Powered-By: Tor for PHP Built-in Server (' . SCRIPT_VERSION . ')', true, $code);
+		header('Access-Control-Allow-Origin: *');
 	}
 	
 	echo $output;
